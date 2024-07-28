@@ -1,0 +1,16 @@
+{
+  "name": "marp-pptx-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx @marp-team/marp-cli -s ./src",
+    "build": "npx @marp-team/marp-cli ./src --pptx --theme-set ./src/styles/*.css --allow-local-files"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@marp-team/marp-cli": "^3.4.0"
+  }
+}

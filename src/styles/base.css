@@ -1,0 +1,34 @@
+/* @theme base */
+@import 'gaia';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+:root {
+  --background: linear-gradient(to bottom right, #9bd4ff, #fffa9b);
+  --color: #333333;
+  --font-family: 'Noto Sans JP', sans-serif;
+  --margin: 32px;
+  --border-radius: 16px;
+}
+
+section {
+  background: var(--background);
+  color: var(--color);
+  font-family: var(--font-family);
+}
+
+section::before {
+  background: white;
+  content: '';
+  position: absolute;
+  top: var(--margin);
+  left: var(--margin);
+  right: var(--margin);
+  bottom: var(--margin);
+  border-radius: var(--border-radius);
+  z-index: 0;
+}
+
+section > * {
+  position: relative;
+  z-index: 1;
+}
